@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     let Area = FigureArea()
     let Con = Convert()
+    let BtnCl = BtnClick()
     @IBOutlet weak var lblAnswer: UILabel!
     @IBOutlet weak var txfOneSide: UITextField!
     @IBOutlet weak var txfSecondSide: UITextField!
@@ -23,15 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnCalculate_actnClick(_ sender: UIButton) {
-        switch segmentcontrolSquare.selectedSegmentIndex
-        {
-        case 0:
-            lblAnswer.text = Con.toString(txfDouble1: Area.Square(txfOneSide: Con.toDouble(txfString: txfOneSide.text ?? "0")))
-        case 1:
-            lblAnswer.text = Con.toString(txfDouble1: Area.Rectangle(txfFirstSide: Con.toDouble(txfString: txfOneSide.text ?? "0"), txfSecondSide: Con.toDouble(txfString: txfSecondSide.text ?? "0")))
-        default:
-            print ("Ошибка")
-        }
+        lblAnswer.text = BtnCl.BtnClickAnswer(segmentcontrol: segmentcontrolSquare, txfOne: txfOneSide, txfSecond: txfSecondSide)
     }
     
     @IBAction func segmentcontrolSquare_actnValueChange(_ sender: UISegmentedControl) {

@@ -19,6 +19,8 @@
 		3F5F7CAA27E9DF8500F8EC76 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F7CA927E9DF8500F8EC76 /* Convert.swift */; };
 		3F5F7CB027E9E38C00F8EC76 /* StringToDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F7CAF27E9E38C00F8EC76 /* StringToDouble.swift */; };
 		3F5F7CB227E9E63B00F8EC76 /* DoubleToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F7CB127E9E63B00F8EC76 /* DoubleToString.swift */; };
+		3F5F7CB427E9F4B600F8EC76 /* GetAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F7CB327E9F4B600F8EC76 /* GetAnswer.swift */; };
+		3F5F7CBB27E9F7D600F8EC76 /* mainExecution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F7CBA27E9F7D600F8EC76 /* mainExecution.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		3F5F7CA927E9DF8500F8EC76 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
 		3F5F7CAF27E9E38C00F8EC76 /* StringToDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDouble.swift; sourceTree = "<group>"; };
 		3F5F7CB127E9E63B00F8EC76 /* DoubleToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleToString.swift; sourceTree = "<group>"; };
+		3F5F7CB327E9F4B600F8EC76 /* GetAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnswer.swift; sourceTree = "<group>"; };
+		3F5F7CBA27E9F7D600F8EC76 /* mainExecution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainExecution.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			children = (
 				3F5F7CA827E9DF5F00F8EC76 /* Convert */,
 				3F5F7CA427E9DCFC00F8EC76 /* Area */,
+				3F5F7CB527E9F6EB00F8EC76 /* Execution */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -155,6 +160,31 @@
 				3F5F7CB127E9E63B00F8EC76 /* DoubleToString.swift */,
 			);
 			path = ToString;
+			sourceTree = "<group>";
+		};
+		3F5F7CB527E9F6EB00F8EC76 /* Execution */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F7CB827E9F76500F8EC76 /* Button */,
+				3F5F7CBA27E9F7D600F8EC76 /* mainExecution.swift */,
+			);
+			path = Execution;
+			sourceTree = "<group>";
+		};
+		3F5F7CB827E9F76500F8EC76 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F7CB927E9F78500F8EC76 /* ActionClick */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		3F5F7CB927E9F78500F8EC76 /* ActionClick */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F7CB327E9F4B600F8EC76 /* GetAnswer.swift */,
+			);
+			path = ActionClick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +261,12 @@
 				3F5F7CB227E9E63B00F8EC76 /* DoubleToString.swift in Sources */,
 				3F5F7CA227E9D9A800F8EC76 /* RectangleArea.swift in Sources */,
 				3F5F7CAA27E9DF8500F8EC76 /* Convert.swift in Sources */,
+				3F5F7CBB27E9F7D600F8EC76 /* mainExecution.swift in Sources */,
 				3F5F7C8D27E9D2C700F8EC76 /* ViewController.swift in Sources */,
 				3F5F7C9F27E9D3BD00F8EC76 /* SquareArea.swift in Sources */,
 				3F5F7CB027E9E38C00F8EC76 /* StringToDouble.swift in Sources */,
 				3F5F7C8927E9D2C700F8EC76 /* AppDelegate.swift in Sources */,
+				3F5F7CB427E9F4B600F8EC76 /* GetAnswer.swift in Sources */,
 				3F5F7C9D27E9D39300F8EC76 /* FigureArea.swift in Sources */,
 				3F5F7C8B27E9D2C700F8EC76 /* SceneDelegate.swift in Sources */,
 			);
