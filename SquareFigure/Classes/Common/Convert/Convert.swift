@@ -7,12 +7,16 @@
 
 import Foundation
 let ToDouble = StringToDouble()
+let ToString = DoubleToString()
 
 class Convert
 {
     
-    func toDouble(txfstring: String) -> Double{
-       return ToDouble.conToDouble(string: txfstring)
+    func toDouble(txfString: String) -> Double{
+       return ToDouble.conToDouble(string: txfString)
+    }
+    func toString(txfDouble1: Double) -> String{
+        return ToString.DbleToStrng(double: txfDouble1)
     }
     
 }

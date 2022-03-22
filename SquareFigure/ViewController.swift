@@ -26,9 +26,9 @@ class ViewController: UIViewController {
         switch segmentcontrolSquare.selectedSegmentIndex
         {
         case 0:
-            lblAnswer.text = String(format: "%f", Area.Square(txfOneSide: Con.toDouble(txfstring: txfOneSide.text ?? "0")))
+            lblAnswer.text = Con.toString(txfDouble1: Area.Square(txfOneSide: Con.toDouble(txfString: txfOneSide.text ?? "0")))
         case 1:
-            lblAnswer.text = String(format: "%f", Area.Rectangle(txfFirstSide: Con.toDouble(txfstring: txfOneSide.text ?? "0"), txfSecondSide: Con.toDouble(txfstring: txfSecondSide.text ?? "0")))
+            lblAnswer.text = Con.toString(txfDouble1: Area.Rectangle(txfFirstSide: Con.toDouble(txfString: txfOneSide.text ?? "0"), txfSecondSide: Con.toDouble(txfString: txfSecondSide.text ?? "0")))
         default:
             print ("Ошибка")
         }
